@@ -13,7 +13,7 @@ public class UsingBufferedReader {
 
         StopWatch.start();
 
-        BufferedReader inputStream= new BufferedReader(new FileReader(DumpDataWriter.input1MB));
+        BufferedReader inputStream= new BufferedReader(new FileReader("C:\\git\\Lab10_22000286_ParkWonjin\\app "+args[0]+".txt"));
         while (inputStream.read()!=-1){}
 
         long duration = StopWatch.stop();
@@ -26,7 +26,7 @@ public class UsingBufferedReader {
 
         StopWatch.start();
 
-        BufferedReader inputStream2= new BufferedReader(new FileReader(DumpDataWriter.input10MB));
+        BufferedReader inputStream2= new BufferedReader(new FileReader("C:\\git\\Lab10_22000286_ParkWonjin\\app "+args[1]+".txt"));
         while (inputStream2.read()!=-1){}
 
         long duration2 = StopWatch.stop();
